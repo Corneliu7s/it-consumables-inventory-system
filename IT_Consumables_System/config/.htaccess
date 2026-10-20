@@ -1,0 +1,9 @@
+# Block direct web access to this folder (Apache 2.4)
+<IfModule mod_authz_core.c>
+    Require all denied
+</IfModule>
+# Fallback for Apache 2.2
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+</IfModule>
