@@ -1,14 +1,12 @@
 ================================================================
  AUTOMATED IT CONSUMABLES INVENTORY AND STOCK TRACKING SYSTEM
- KNEC Diploma in ICT (DICT) - Module III Capstone Project
  Author: Cornelius Kithuka Munyao
- Institution: Eastlands College of Technology
+ Institution: Eastlands College of Technology 
 ================================================================
 
-This is a complete, working implementation of the system described
-in your project report: PHP 8 + SQLite (via PDO) + a Bootstrap-5-
+This is a complete, working implementation of the system described: PHP 8 + SQLite (via PDO) + a Bootstrap-5-
 style responsive interface. It runs entirely offline once installed,
-which makes it ideal for a live KNEC assessment where internet
+which makes it ideal for a live assessment where internet
 access is not guaranteed.
 
 Note on Bootstrap: the report specifies Bootstrap 5 for the
@@ -17,7 +15,7 @@ online CDN, and this system must run fully offline, the interface
 uses a small bundled stylesheet (assets/css/style.css) built with
 the same component conventions (navbar, cards, badges, tables,
 forms, buttons) so the system needs no internet connection at all,
-on the examiner's machine or your own.
+on the machine.
 
 
 ----------------------------------------------------------------
@@ -66,7 +64,7 @@ in Chapter 4 / Test Case TC-01 of the project report.)
 
 
 ----------------------------------------------------------------
-4. WHAT TO SHOW THE EXAMINER
+4. WHAT IT SHOWS 
 ----------------------------------------------------------------
 - Dashboard        : live counts, low-stock alerts, recent activity.
 - Items            : full catalogue, add/edit/delete, category
@@ -85,23 +83,11 @@ in Chapter 4 / Test Case TC-01 of the project report.)
 - Reports          : low-stock warning list plus a full inventory
                       summary, with a "Print report" button.
 
-Suggested live demo flow for the assessment:
-  1. Log in.
-  2. Show the Dashboard and point out the low-stock badges.
-  3. Open Items, filter by a category, then edit an item's minimum
-     threshold to show it move in/out of the low-stock list.
-  4. Perform a Checkout that exceeds available stock to show the
-     rejection message (TC-03), then a valid checkout (TC-04) and
-     show the stock figure update instantly.
-  5. Open Transactions to show the new entry in the audit trail.
-  6. Open Reports and click "Print report".
-
 
 ----------------------------------------------------------------
 5. RESETTING THE DEMO DATA
 ----------------------------------------------------------------
-To start over with a clean database (e.g. the morning of your
-presentation), simply delete the database file and refresh the
+To start over with a clean database, simply delete the database file and refresh the
 page - it will be recreated and reseeded automatically:
     IT_Consumables_System/storage/it_consumables.db
 
